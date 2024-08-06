@@ -1,0 +1,53 @@
+body {
+    background: #091540;
+    height: 100vh;
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notif {
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    width: 300px;
+    height: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 2s ease forwards;
+}
+
+.welcome_text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #091540;
+}
+
+.loader {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    height: 5px;
+    width: 100px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: green;
+    animation: load 1s ease forwards;
+}
+
+@keyframes fade-in {
+    5%,
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes load {
+    100% {
+        transform: scaleX(1);
+    }
+}

@@ -1,0 +1,35 @@
+body {
+    background: linear-gradient(90deg, white, purple);
+}
+
+button {
+    width: 120px;
+    height: 30px;
+    background-color: rgb(9, 144, 235);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.name {
+    flex: 1 0 10rem;
+}
+
+.email {
+    flex: 1 0 10rem;
+}
+
+.button {
+    flex:  1 0 5rem;
+}

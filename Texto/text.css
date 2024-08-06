@@ -1,0 +1,35 @@
+body {
+    background: rgb(194, 201, 196);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto" sans-serif;
+}
+
+.text {
+    background: url(imagen/paisaje.jpg);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: cover;
+    color: transparent;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+button {
+    width: 90px;
+    height: 30px;
+    border: 2px hidden black;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgb(0, 0, 12);
+}
+
+button a {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+}
+
+button:hover {
+    background:linear-gradient(90deg, violet, rgb(67, 67, 212));
+}
